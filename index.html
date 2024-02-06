@@ -1,0 +1,80 @@
+<html>  
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>PHP Test</title>
+ 
+    <body>
+        <div id="formulario">
+          <form method="POST">
+            <div class="separador">
+              <label>Nome do vendedor: </label>
+              <input type="text" id="nomeVendedor" name="nomeVendedor">
+            </div>
+            <div class="separador">
+              <label>Meta de vendas: </label>
+              <input type="number" id="metaVendas" name="metaVendas">
+            </div>
+            <div class="separador">
+              <label>Valor hora: </label>
+              <input type="number" id="horaValor" name="horaValor">
+            </div>
+            <div class="separador">
+              <label>Quantidade de horas trabalhadas: </label>
+              <input type="number" id="qtdHoras" name="qtdHoras"> 
+            </div>
+            <div class="separador">
+              <label>Valor das vendas realizadas: </label>
+              <input type="number" id="vendasFeitas" name="vendasFeitas">
+            </div>
+            <div class="separador">
+              <input type="submit" id="calcular" name="calcular">
+            </div>
+
+        </form>
+        <br>
+        <table style="width:100%">
+          <tr id="header">
+            <th id="header01">Descrição</th>
+            <th id="header02">Descontos</th>
+            <th id="header03">Proventos</th>
+          </tr>
+          <tr id="valorBruto">
+            <td id="valorBruto_title">Salário Bruto</td>
+            <td id="valorBruto_desc" name="valorBruto_desc"><?php echo "R$ 0"; ?></td>
+            <td id="valorBruto_prov" name="valorBruto_prov"><?php echo "R$ $salarioBruto"; ?></td>
+          </tr>
+          <tr id="comissao">
+            <td id="comissao_title">Comissão</td>
+            <td id="comissao_desc" name="comissao_desc"><?php echo "R$ 0"; ?></td>
+            <td id="comissao_prov" name="comissao_prov"><?php echo "R$ $vlrComiss"; ?></td>
+          </tr>
+          <tr id="totVlrBruto">
+            <td id="totVlrBruto_title">Total Bruto</td>
+            <td id="totVlrBruto_desc" name="totVlrBruto_desc"><?php echo "R$ 0"; ?></td>
+            <td id="totVlrBruto_prov" name="totVlrBruto_prov"><?php echo "R$ $salarioBonus"; ?></td>
+          </tr>
+          <tr id="inss">
+            <td id="inss_title">INSS</td>
+            <td id="inss_desc" name="inss_desc"><?php echo "R$ $inssTotal"; ?></td>
+            <td id="inss_prov" name="inss_prov"><?php echo "R$ 0"; ?></td>
+          </tr>
+          <tr id="ir">
+            <td id="ir_title">Imposto de Renda</td>
+            <td id="ir_desc" name="ir_desc"><?php echo "R$ $irTotal"; ?></td>
+            <td id="ir_prov" name="ir_prov"><?php echo "R$ 0"; ?></td>
+          </tr>
+          <tr id="descont">
+            <td id="descont_title">Descontos Totais</td>
+            <td id="descont_desc" name="descont_desc"><?php echo "R$ $totalDesc"; ?></td></td>
+            <td id="descont_prov" name="descont_prov"><?php echo "R$ 0"; ?></td>
+          </tr>
+          <tr id="valorLiq">
+            <td id="valorLiq_title">Salário Líquido</td>
+            <td id="valorLiq_desc" name="valorLiq_desc"><?php echo "R$ 0"; ?></td>
+            <td id="valorLiq_prov" name="valorLiq_prov"><?php echo "R$ $totalLiq" ?></td>
+          </tr>
+        </table>
+      </div>
+    </body>
+  </html>

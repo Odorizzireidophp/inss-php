@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#formulario {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.separador {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#header {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#valorBruto_title, #comissao_title, #totVlrBruto_title, #inss_title, #ir_title, #descont_title, #valorLiq_title {
+  font-weight: bold;
+}
+
+#valorBruto_prov, #comissao_prov, #totVlrBruto_prov, #inss_prov, #ir_prov, #descont_prov, #valorLiq_prov {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+#valorBruto_desc, #comissao_desc, #totVlrBruto_desc, #inss_desc, #ir_desc, #descont_desc, #valorLiq_desc {
+  font-weight: bold;
+  color: #e53935;
+}
